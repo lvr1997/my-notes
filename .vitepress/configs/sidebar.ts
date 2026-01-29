@@ -134,6 +134,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
         {
           text: "JavaScript代码片段",
           link: "/FrontEnd/1.HTML+CSS+JS/7.js_snippet"
+        },
+        {
+          text: 'FrontEnd Mentor',
+          link: '/FrontEnd/1.HTML+CSS+JS/8.frontend-mentor'
         }
       ]
     },
