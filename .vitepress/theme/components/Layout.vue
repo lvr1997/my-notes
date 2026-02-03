@@ -8,6 +8,7 @@ import { usePageId } from '../composables'
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, provide, reactive } from 'vue';
 import Giscus from '@giscus/vue'
+import Typer from './Typer.vue';
 
 const { Layout } = DefaultTheme
 const { isDark, page, frontmatter,theme } = useData()
@@ -36,7 +37,7 @@ onMounted(() => {
   <Layout>
     <template #home-hero-info-after>
       <p class="tagline pt-4 text-xl">
-        ✨ <a :href="hitokoto.href">{{ hitokoto.text }}</a>
+        ✨ <Typer v-if="hitokoto.text" :text="hitokoto.text" :speed="60" />
       </p>
     </template>
     <template #home-hero-info-before>
