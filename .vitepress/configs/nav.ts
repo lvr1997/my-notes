@@ -5,6 +5,6 @@ export const nav: DefaultTheme.NavItem[] = [
     { text: "搬砖日记", items: [
         { text: "前端", link: "/FrontEnd" },
         { text: "后端", link: "/BackEnd" },
-    ] },
-    { text: "Blog", link: "https://2025-blog-public-two.vercel.app/" }
+        { text: "杂记", link: "/Essay" },
+    ] }
   ]

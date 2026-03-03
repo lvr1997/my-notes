@@ -38,7 +38,10 @@ export default defineConfig({
       label: '目录',
       level: [2, 3],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/lvr1997" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/lvr1997" },
+      { icon: "vitepress", link: "https://vitepress.dev/" },
+    ],
     search: {
       provider: 'local',
       options: searchOptions,

@@ -348,6 +348,45 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
    
   ],
 
+  "/Essay/": [
+    {
+      text: "2016",
+      collapsed: false,
+      items: [
+        { text: "初识Java", link: "/Essay/2016/intro-java" },
+      ]
+    },
+    {
+      text: "2017",
+      collapsed: false,
+      items: [
+        { text: "培训", link: "/Essay/2017/java-learn" },
+      ]
+    },
+    {
+      text: "2021",
+      collapsed: false,
+      items: [
+        { text: "涨薪 or 离职", link: "/Essay/2021/choose-job" },
+        { text: "来自一个程序媛的内心独白", link: "/Essay/2021/java-story" },
+      ]
+    },
+    {
+      text: "2025",
+      collapsed: false,
+      items: [
+        { text: "WordPress使用小记", link: "/Essay/2025/wordpress-use-record" },
+      ]
+    },
+    {
+      text: "2026",
+      collapsed: false,
+      items: [
+        { text: "React使用感想", link: "/Essay/2026/react-use-express" },
+      ]
+    }
+  ],
+
   "/software/": [
     {
       text: "VS Code",
