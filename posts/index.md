@@ -32,11 +32,10 @@ features:
     details: 记录自己日常用到的一些软件工具，包括但不限于：Markdown编辑器、代码编辑器等等。
     link: /software
     linkText: 常用软件工具
-  - icon: 
-      src: /svg/vitepress-logo-mini.svg 
-    title: VitePress
-    details: 简介轻便的文档站，可以使用Markdown格式编写内容，并且可以自定义主题。
-    link: https://vitepress.dev/zh/
+  - icon: 📕 
+    title: 杂记
+    details: 随笔~
+    link: /Essay
     linkText: VitePress官网
   - icon: 
       src: /svg/obsidian-icon.svg
