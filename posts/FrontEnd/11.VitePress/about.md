@@ -32,7 +32,7 @@ ob中的`[[ ]]` 双链语法，在`vitepress`中是不支持的，所以我在ob
 
 我的目录配置：
 
-![](../../assets/ScreenShot_2025-12-18_141952_361.png)
+![](https://files.seeusercontent.com/2026/03/17/2lrQ/ScreenShot_2025-12-18_141952_361.png)
 
 > [!TIP] 目录配置
 > 配置`srcDir`目录为ob仓库文件夹名，下次使用ob编辑文档时，直接打开`post`目录，这样ob内就不会显示`vitepress`脚手架相关的配置内容。
