@@ -34,9 +34,9 @@ features:
     linkText: 常用软件工具
   - icon: 📕 
     title: 杂记
-    details: 随笔~
+    details: 日常碎片记录~
     link: /Essay
-    linkText: VitePress官网
+    linkText: 随笔
   - icon: 
       src: /svg/obsidian-icon.svg
     title: Obsidian

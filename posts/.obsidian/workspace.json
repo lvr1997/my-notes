@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "028e51ec5baba1fa",
+        "id": "d6dd93fe0f8812f9",
         "type": "tabs",
         "children": [
           {
-            "id": "1610d2c1039b259c",
+            "id": "67d6494f3e725c26",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 220.5
   },
   "right": {
     "id": "6f8e4f9ba3906ecd",
@@ -178,13 +178,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1610d2c1039b259c",
+  "active": "67d6494f3e725c26",
   "lastOpenFiles": [
+    "i-have/01-Documents/1.requirement.md",
+    "BackEnd/index.md",
+    "未命名.base",
     "i-have/02-Code/1.backend-imageUpload.md",
     "i-have/index.md",
     "i-have/01-Documents/4.interface.md",
     "i-have/01-Documents/2.backend-framework.md",
-    "未命名.base",
     "未命名 1.base",
     "i-have/01-Documents/4.interaface.md"
   ]

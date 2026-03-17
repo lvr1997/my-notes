@@ -383,6 +383,7 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
       collapsed: false,
       items: [
         { text: "React使用感想", link: "/Essay/2026/react-use-express" },
+        { text: "Nginx缓存踩坑", link: "/Essay/2026/nginx-cache" },
       ]
     }
   ],

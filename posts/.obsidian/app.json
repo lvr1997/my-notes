@@ -5,5 +5,7 @@
   "attachmentFolderPath": "assets",
   "newFileLocation": "current",
   "strictLineBreaks": true,
-  "livePreview": false
+  "livePreview": true,
+  "defaultViewMode": "preview",
+  "showInlineTitle": false
 }
