@@ -424,6 +424,16 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
           link: "/software/OtherTools/touch_fish.md"
         }
       ]
+    },
+    {
+      text: "AI",
+      collapsed: false,
+      items: [
+        {
+          text: "Codex",
+          link: "/software/ai/codex.md"
+        }
+      ]
     }
   ],
   "/i-have/": [
