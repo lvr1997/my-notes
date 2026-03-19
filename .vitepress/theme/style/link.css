@@ -32,7 +32,7 @@
 /* GitHub */
 .vp-doc a[href^="https://github.com/"]:before {
     content: '';
-    background-image: url(/svg/github-mark.svg);
+    background-image: url(/svg/github.svg);
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -42,3 +42,8 @@
     top: -2px;
     margin-right: 4px;
 }
+
+.dark .vp-doc a[href^="https://github.com/"]:before {
+    background-image: url(/svg/github-dark.svg);
+}
+

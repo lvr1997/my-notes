@@ -9,7 +9,7 @@ date: 2026-02-09 19:11
 
 ## 开发
 
-基于[next-wp](https://github.com/9d8dev/next-wp)和[next-woo](https://github.com/9d8dev/next-woo)这两个项目，连接WordPress后台和 WooCommerce
+基于 [next-wp](https://github.com/9d8dev/next-wp) 和 [next-woo](https://github.com/9d8dev/next-woo) 这两个项目，连接WordPress后台和 WooCommerce
 
 ## 打包
 
