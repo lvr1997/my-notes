@@ -83,7 +83,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: "https://rzoco.top/",
+    hostname: "https://www.rzoco.top/",
   },
   vite: {
     css: {
