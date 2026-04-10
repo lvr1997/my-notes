@@ -12,16 +12,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/favicon.png" }],
     [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-W45R454H' }
-    ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GTM-W45R454H');`
+      "meta", { name: "google-site-verification", content: "Rx6JbEA3FBUNILuPlomUEDql5CvovI2Ix4HB8xShV1g" }
     ],
     [
       'script',
