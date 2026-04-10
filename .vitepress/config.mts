@@ -9,7 +9,30 @@ export default defineConfig({
   lang: "zh-CN",
   title: "Riny's Notes",
   description: "前端搬砖日记，前端知识积累，技术总结。Java程序媛",
-  head: [["link", { rel: "icon", href: "/favicon.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.png" }],
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-W45R454H' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GTM-W45R454H');`
+    ],
+    [
+      'script',
+      { id: 'register-sw' },
+      `;(() => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+        }
+      })()`
+    ]
+  ],
   srcDir: "./posts",
   srcExclude: [".obsidian", 'templates', 'Clippings'],
   cleanUrls: true,
