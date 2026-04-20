@@ -5,6 +5,7 @@
 @import './vp-code-group.css';
 @import './sidebarIcon.css';
 @import './medium-zoom.css';
+@import './my-fonts.css';
 
 
 /* 参考 node_modules\vitepress\dist\client\theme-default\styles\var.css 一一修改 */

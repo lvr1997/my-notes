@@ -147,6 +147,41 @@ export default defineConfig({
       // })
     ]
   },
+  transformHead({ assets }) {
+    const links = []
+    
+    // 预加载 LXGWWenKai 字体
+    const wenkaiFont = assets.find(file => /LXGWWenKai.*\.woff2/)
+    if (wenkaiFont) {
+      links.push([
+        'link',
+        {
+          rel: 'preload',
+          href: wenkaiFont,
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: ''
+        }
+      ])
+    }
+    
+    // 预加载 CodeNewRoman 字体
+    const codeFont = assets.find(file => /CodeNewRoman\.woff/)
+    if (codeFont) {
+      links.push([
+        'link',
+        {
+          rel: 'preload',
+          href: codeFont,
+          as: 'font',
+          type: 'font/woff',
+          crossorigin: ''
+        }
+      ])
+    }
+    
+    return links.length > 0 ? links : undefined
+  },
   transformPageData: prod ? (pageData, ctx) => {
     const url = new URL(pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1'), siteUrl).href
     const site = ctx.siteConfig.site

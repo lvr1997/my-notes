@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('/fonts/LXGWWenKai-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'CodeNewRoman';
+    src: url('/fonts/CodeNewRoman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CodeNewRoman';
+    src: url('/fonts/CodeNewRoman-b.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CodeNewRoman';
+    src: url('/fonts/CodeNewRoman-i.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+  --vp-font-family-base: 'LXGWWenKai', system-ui;
+  --vp-font-family-mono: 'CodeNewRoman', monospace;
+}
+
+.vp-doc div[class*='language-'],
+.vp-doc code {
+  font-family: var(--vp-font-family-mono) !important;
+}
