@@ -99,6 +99,17 @@ export default defineConfig({
   sitemap: {
     hostname: "https://www.rzoco.top/",
   },
+  transformPageData(pageData) {
+    const canonicalUrl = `https://www.rzoco.top/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
+  },
   vite: {
     css: {
       preprocessorOptions: {
