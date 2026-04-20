@@ -18,7 +18,7 @@ title: Nginx缓存踩坑
 
 我忽略了一个最不起眼的配置：在nginx配置文件最上方有这样一行代码：
 
-```nginx.conf
+```bash [nginx.conf]
 proxy_cache_path /www/wwwroot/next-wp-app/proxy_cache_dir levels=1:2 keys_zone=next_wp_app_cache:20m inactive=5m max_size=1g;
 ```
 
