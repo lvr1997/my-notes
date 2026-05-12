@@ -383,58 +383,16 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
       collapsed: false,
       items: [
         { text: "React使用感想", link: "/Essay/2026/react-use-express" },
-        { text: "Nginx缓存踩坑", link: "/Essay/2026/nginx-cache" },
+        { text: "Nginx缓存踩坑", link: "/Essay/2026/nginx-cache" }
       ]
     }
   ],
 
-  "/software/": [
-    {
-      text: "VS Code",
-      collapsed: false,
-      items: [
-        {
-          text: "使用技巧",
-          link: "/software/VSCode/use_skill.md"
-        },
-        {
-          text: "常用插件",
-          link: "/software/VSCode/use_plugin.md"
-        },
-        {
-          text: "常用主题",
-          link: "/software/VSCode/use_theme.md"
-        }
-      ]
-    },
-    {
-      text: "Others",
-      collapsed: false,
-      items: [
-        {
-          text: "在线工具",
-          link: "/software/OtherTools/online_tools.md"
-        },
-        {
-          text: "桌面软件",
-          link: "/software/OtherTools/desktop_software.md"
-        },
-        {
-          text: "摸鱼",
-          link: "/software/OtherTools/touch_fish.md"
-        }
-      ]
-    },
-    {
-      text: "AI",
-      collapsed: false,
-      items: [
-        {
-          text: "Codex",
-          link: "/software/ai/codex.md"
-        }
-      ]
-    }
+  "/diy/": [
+    { text: "硬件篇", items: [
+      { text: "数字小键盘", link: "/diy/hardware/num-pad.md" },
+      { text: "40%小配列", link: "/diy/hardware/40-keyboard.md" }
+    ] },
   ],
   "/i-have/": [
     {

@@ -5,6 +5,7 @@ export const nav: DefaultTheme.NavItem[] = [
     { text: "搬砖日记", items: [
         { text: "前端", link: "/FrontEnd" },
         { text: "后端", link: "/BackEnd" },
-        { text: "杂记", link: "/Essay" },
-    ] }
+        { text: "随笔", link: "/Essay" },
+    ] },
+    { text: "抠抠搜搜DIY系列", link: "/diy" }
   ]
