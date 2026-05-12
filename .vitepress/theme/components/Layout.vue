@@ -1,19 +1,14 @@
 <script setup lang="ts">
-import tag from './tag.vue'
 import DocFooter from './DocFooter.vue';
 import Visitor from './Visitor.vue';
 import HomeUnderline from './HomeUnderline.vue'
 import { useData } from "vitepress";
-import { usePageId } from '../composables'
 import DefaultTheme from 'vitepress/theme';
-import { nextTick, onMounted, provide, reactive } from 'vue';
-import Giscus from '@giscus/vue'
+import { onMounted, reactive } from 'vue';
 import Typer from './Typer.vue';
 
 const { Layout } = DefaultTheme
-const { isDark, page, frontmatter,theme } = useData()
-const pageId = usePageId()
-const { comment } = theme.value
+const { page } = useData()
 
 const hitokoto = reactive({
   text: '',
@@ -37,7 +32,7 @@ onMounted(() => {
   <Layout>
     <template #home-hero-info-after>
       <p class="tagline pt-4 text-xl">
-        ✨ <Typer v-if="hitokoto.text" :text="hitokoto.text" :speed="60" />
+        ✨ <Typer v-if="hitokoto.text" :text="hitokoto.text" :speed="60" /> <span v-else>Loading...</span>
       </p>
     </template>
     <template #home-hero-info-before>
@@ -55,29 +50,8 @@ onMounted(() => {
     <template #nav-bar-title-after>
       <Visitor />
     </template>
-    <template #doc-before>
-      <tag />
-    </template>
     <template #doc-after>
       <DocFooter />
-    </template>
-
-    <template v-if="comment && frontmatter.comment !== false" #doc-footer-before>
-      <div class="doc-comments">
-        <Giscus
-          id="comments"
-          mapping="specific"
-          :term="pageId"
-          strict="1"
-          reactionsEnabled="1"
-          emitMetadata="0"
-          inputPosition="top"
-          :theme="isDark ? 'dark' : 'light'"
-          lang="zh-CN"
-          loading="lazy"
-          v-bind="{ ...comment }"
-        />
-      </div>
     </template>
 
   </Layout>
@@ -86,13 +60,6 @@ onMounted(() => {
 <style>
 .prev-next.prev-next {
   border-top: none;
-}
-
-.doc-comments {
-  margin-top: 24px;
-  margin-bottom: 48px;
-  border-top: 1px solid var(--vp-c-divider);
-  padding-top: 24px;
 }
 
 /* 调整SVG容器大小 */

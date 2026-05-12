@@ -1,4 +1,6 @@
+// @ts-ignore
 import markdownMark from 'markdown-it-mark';
+// @ts-ignore
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 // import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
@@ -7,9 +9,6 @@ import { searchOptions, nav, sidebar } from "./configs";
 import llmstxt from 'vitepress-plugin-llms'
 
 const prod = !!process.env.NETLIFY
-const siteUrl = 'https://www.rzoco.top'
-
-const ogImage = new URL('/rinynotes-og.png', siteUrl).href
 
 export default defineConfig({
   lang: "zh-CN",
@@ -17,9 +16,6 @@ export default defineConfig({
   description: "前端搬砖日记，前端知识积累，技术总结。Java程序媛",
   head: [
     ["link", { rel: "icon", href: "/favicon.png" }],
-    [
-      "meta", { name: "google-site-verification", content: "Rx6JbEA3FBUNILuPlomUEDql5CvovI2Ix4HB8xShV1g" }
-    ],
     [
       'script',
       { id: 'register-sw' },
@@ -95,12 +91,6 @@ export default defineConfig({
     visitor: {
       badgeId: 'riny-notes'
     },
-    comment: {
-      repo: 'lvr1997/my-notes',
-      repoId: 'R_kgDOMnMr4A',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDOMnMr4M4Ch3mj',
-    },
   },
   sitemap: {
     hostname: "https://www.rzoco.top/",
@@ -148,7 +138,7 @@ export default defineConfig({
     ]
   },
   transformHead({ assets }) {
-    const links = []
+    const links: HeadConfig[] = []
     
     // 预加载 LXGWWenKai 字体
     const wenkaiFont = assets.find(file => /LXGWWenKai.*\.woff2/)
@@ -182,25 +172,4 @@ export default defineConfig({
     
     return links.length > 0 ? links : undefined
   },
-  transformPageData: prod ? (pageData, ctx) => {
-    const url = new URL(pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1'), siteUrl).href
-    const site = ctx.siteConfig.site
-    const title = pageData.title ? `${pageData.title} | ${site.title}` : site.title
-    const description = pageData.description || site.description
-
-    ;((pageData.frontmatter.head ??= []) as HeadConfig[]).push(
-      ['meta', { property: 'og:url', content: url }],
-      ['meta', { property: 'og:title', content: title }],
-      ['meta', { property: 'og:description', content: description }],
-      ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:site_name', content: 'Riny Notes' }],
-      ['meta', { property: 'og:image', content: ogImage }],
-      ['meta', { property: 'og:image:secure_url', content: ogImage }],
-      ['meta', { property: 'og:image:type', content: 'image/jpeg' }],
-      ['meta', { property: 'og:image:width', content: '1280' }],
-      ['meta', { property: 'og:image:height', content: '640' }],
-      ['meta', { property: 'og:image:alt', content: 'Riny Notes' }],
-      ['link', { rel: 'canonical', href: url }]
-    )
-  } : undefined,
 });

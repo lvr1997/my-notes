@@ -28,10 +28,10 @@ features:
     link: /i-have
     linkText: i-have项目技术文档
   - icon: 🧰
-    title: 软件工具
-    details: 记录自己日常用到的一些软件工具，包括但不限于：Markdown编辑器、代码编辑器等等。
-    link: /software
-    linkText: 常用软件工具
+    title: 抠抠搜搜DIY系列
+    details: 记录自己做过的小玩意，虽然可能用处不大，但是很开心很有成就感
+    link: /diy
+    linkText: DIY
   - icon: 📕 
     title: 杂记
     details: 日常碎片记录~
