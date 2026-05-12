@@ -1,5 +1,4 @@
 ---
-comment: false
 lastUpdated: false
 ---
 # 远古笔记
