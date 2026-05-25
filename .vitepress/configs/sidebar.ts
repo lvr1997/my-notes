@@ -391,7 +391,8 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
   "/diy/": [
     { text: "硬件篇", items: [
       { text: "数字小键盘", link: "/diy/hardware/num-pad.md" },
-      { text: "40%小配列", link: "/diy/hardware/40-keyboard.md" }
+      { text: "40%小配列", link: "/diy/hardware/40-keyboard.md" },
+      { text: "麻酱", link: "/diy/hardware/5keys.md" }
     ] },
   ],
   "/i-have/": [
